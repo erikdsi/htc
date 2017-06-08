@@ -13,19 +13,15 @@ Requires Elixir 1.2 or later.
 
 [Install Elixir](https://elixir-lang.org/install.html)
 
-It can also be installed as a library in your existing project:
-
-```elixir
-def deps do
-  [{:htc, git: "https://github.com/erikdsi/htc"}]
-end
+Clone the repo:
+```bash
+$ git clone https://github.com/erikdsi/htc
 ```
 
 ## Usage
 
-Clone the repo and enter the directory:
+Enter the directory:
 ```bash
-$ git clone https://github.com/erikdsi/htc
 $ cd htc
 ```
 Run tests:
