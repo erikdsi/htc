@@ -12,7 +12,7 @@ defmodule HtcTest do
                              right: %Node{value: 2,
                                           children: %{left: %Node{value: 2, children: nil},
                                                       right: %Node{value: 3, children: nil}}}}}
-    assert Htc.build_tree(array) == tree
+    assert Htc.build_tree(array) == {:ok, tree}
   end
 
   test "validate triangle" do
@@ -39,5 +39,15 @@ defmodule HtcTest do
   test "triangle with more than one value at the top layer" do
     example = [[3,5],[9,7,1],[4,6,8,4]]
     assert Htc.max_sum(example) == {:ok, 20}
+  end
+
+  test "convert numerical strings" do
+    example = [[6],[3,"5"],[9,7,1],[4,6,8,4]]
+    assert Htc.max_sum(example) == {:ok, 26}
+  end
+
+  test "helpful errors" do
+    example = [[6],[3,"nope"],[9,7,1],[4,6,8,4]]
+    assert Htc.max_sum(example) == {:error, "couldn't parse element nope as number"}
   end
 end
