@@ -5,13 +5,12 @@ Input is considered to be a triangle if each successive layer has one more eleme
 
 ## Why Elixir?
 
-The task description puts Correctness and Readability as priorities. Elixir's Erlang's heritage makes it natural to write fail-proof code and it's Ruby-like syntax and pattern matching makes it easy to write readable code.
+The task description puts Correctness and Readability as priorities. Elixir's Erlang's heritage makes it natural to write fail-proof code and its Ruby-like syntax and pattern matching makes it easy to write readable code.
 
 ## Installation
 
-Requires Elixir 1.2 or later.
-
-[Install Elixir](https://elixir-lang.org/install.html)
+What you need installed:
+[Elixir](https://elixir-lang.org/install.html)
 
 Clone the repo:
 ```bash
@@ -28,7 +27,7 @@ Run tests:
 ```bash
 $ mix test
 ```
-Or play with it in IEx(Elixir's REPL):
+Play with it in IEx(Elixir's REPL):
 ```bash
 $ iex -S mix
 iex> Htc.max_sum [[6],[3,5],[9,7,1],[4,6,8,4]]
